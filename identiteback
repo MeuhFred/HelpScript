@@ -4,7 +4,7 @@
 #Commande qui demande le nom de la personne
 echo "Quel est votre nom et prénom ? "
 read nom prenom
-
+# test
 nomexiste=$(echo -n $nom | wc -c )
 if[ $nom_existe ] 
 #Verification que l'usager a bien entrer un nom et un prénom
