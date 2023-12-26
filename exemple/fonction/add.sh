@@ -40,9 +40,9 @@ echo "quel operation voulez-vous faire:  (1234 < + - * / > 1234)"
 read nbr
 if [ $nbr | cut -d '+' ]; then
 	echo "Addition"
-elif [ $nbr | cut -d '-' ]; then
+else if  [ $nbr | cut -d '-' ]; then
 	echo "Soustraction"
-elif [ $nbr | cut -d '*' ]; then
+else if  [ $nbr | cut -d '*' ]; then
 	echo "Multiplication"
 else 
 	[ $nbr | cut -d '/' ]
@@ -59,6 +59,3 @@ echo "le deuxieme resultat est : $result2"
 echo "le resultat de la soustraction est : $resultmoins"
 echo "le resultat de la multiplication est: $resultmulti"
 echo "le resultat de la division est: $resultdiv"
-echo "Test de GitHub"
-echo $resultdiv
-
