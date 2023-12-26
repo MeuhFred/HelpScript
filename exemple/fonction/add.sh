@@ -57,8 +57,9 @@ result2=$(add 5 10)
 resultmoins=$(subs 10 5)
 resultmulti=$(multiple 12 12)
 resultdiv=$(div 144 12)
-echo "le resultat est : $resultadd"
+echo "le resultat est : $resultadd
 echo "le deuxieme resultat est : $result2"
 echo "le resultat de la soustraction est : $resultmoins"
 echo "le resultat de la multiplication est: $resultmulti"
 echo "le resultat de la division est: $resultdiv"
+echo "Test de GitHub"
