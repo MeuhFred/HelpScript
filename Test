@@ -1,0 +1,24 @@
+##! /bin/bash
+
+echo "Nom et Prénom SVP"
+read nom prenom
+
+# Valide l' information si l'usager a rentrer quelque chose ou pas
+if [ -z $nom ]
+then
+	echo "Vous n'avez pas entré de nom"
+elif [ -z $prenom ]
+then
+	echo "Vous n'avez pas entré de prénom"
+
+else
+	echo "Entré votre année et mois de naissance sous le format (aaaa-mm)"
+	read date
+	annee=$( echo $date | cut -d '-' -f 1)
+	mois=$(echo $date | cut -d '-' -f 2)
+	echo "Année: $annee "
+	echo "Mois: $mois"
+	nbrchrD =$(echo $date | wc -m $date | echo $nbrchD)
+	echo nbrchrD
+fi
+# echo Prénom: $prenom Nom: $nom

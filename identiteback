@@ -1,0 +1,78 @@
+#! /bin/bash
+#creation de la variable du calendrier
+
+#Commande qui demande le nom de la personne
+echo "Quel est votre nom et prénom ? "
+read nom prenom
+
+nomexiste=$(echo -n $nom | wc -c )
+if[ $nom_existe ] 
+#Verification que l'usager a bien entrer un nom et un prénom
+	echo "Vous n'avez pas entrer de nom"
+	exit
+fi
+
+if [ $prenom_existe ]
+	echo "Vous n'avez pas entrer de prenom"
+	exit
+fi
+
+#if [ -z "$nom_existe" ]
+#	then
+#	echo "Vous n'avez pas entré de nom."
+#Vérification si l'usager a bien rentré un nom
+#elif [ -z "$prenom" ]
+#then
+
+#Affiche un message indiquant a l`usager qu`il n`as pas rentrer de prénom
+
+#	echo "Vous n'avez pas entré de prénom."
+#else
+
+#Commande qui demande l'année et le mois de naissance de la personne
+	echo "Entrez votre année et mois de naissance sous le format (aaaa-mm)"
+	read date
+#Valide le format de la date si elle est correctement entré
+	annee=$(echo $date | cut -d '-' -f 1)
+	mois=$(echo $date | cut -d '-' -f 2)
+	echo $annee
+	echo $mois
+# si l' annee est plus que 1900 et moins 2023
+	if [ $annee < 1900 or $annee > 2024 ]
+	then 
+		echo "annee de naisse doit etre etre 1900 et 2024"
+		break
+	fi
+
+#L'option echo -n retire le saut de ligne pour ne pas le compter dans le compte
+#	nbrcharD=$(echo -n $date | wc -c )
+#	echo $nbrcharD
+#	nbrcharA=$(echo -n $annee | wc -c ) 
+#	echo $nbrcharA
+#	nbrcharM=$(echo -n $mois | wc -c )
+#	echo $nbrcharM
+
+#	CharDate=$(echo -n $)
+
+#Vérification que l'usagé a bien entré une date ou non
+	#Verifie si le nombre de mois est plus grand que 12
+
+	if [ $nbrcharD -ne 7 ];	then
+		echo "Le format de la date n'est pas correct (aaaa-mm)"
+#	fi
+	elif [ "$nbrcharA" -ne 4 ]
+		then
+		echo "Vous devez entré une année avec seulement 4 chiffres"
+	elif [ $nbrcharM -ge 12 ]
+		then
+		echo "Il ne peut pas y avoir plus que 12 mois"
+#	elif [ $CharDate -ne 7 ]
+#		then
+#		echo "Vous devez entré une date valide."
+	else
+		echo "$nom $prenom né en $date"
+		cal -d $date
+	fi
+#Test de la sortie des variables inscrite
+#echo Bonjour $nom $prenom
+

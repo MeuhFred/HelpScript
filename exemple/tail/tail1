@@ -1,0 +1,105 @@
+#! /bin/bash
+# echo -e
+
+# ====================================================
+# ==================== Fonction ======================
+# ====================================================
+
+function ligne1() {
+echo "-================================================================-"
+}
+
+function ligne2() {
+echo "-----------------------------------------------------"
+}
+
+function resultat() {
+echo "Le resultat de la commande $commande"
+}
+# ==========================================================
+# =================== Programme Principale =================
+# ==========================================================
+
+clear
+echo pour quel commande voulez-vous un exemple? : 
+ligne1
+echo "1-) ls -l /boot | head -4"
+echo "2-) ls -l /boot | tail -1"
+echo "3-) ls -l /boot | head -3 | tail -1"
+echo "4-) ls -l /boot | head -2 | tail -2"
+ligne1
+read choix
+#if [$exemple = 1] then $commande = $(echo ls -l /boot)
+if [ "$choix" -eq 1 ]; then
+	$commande = $(echo "ls -l /boot | head -4")
+	echo "exemple de la commande " | commande
+	ligne1 | echo -e | echo resultat
+	ligne2 | echo -e | commande
+elif [ "$choix" -eq 2 ]; then 
+	$commande = $(echo "ls -l /boot | tail -1")
+	echo "exemple de la commande ls -l /boot | /tail -1"
+	ligne1 | echo -e | echo resultat
+	ligne2 | echo -e | commande
+elif [ "$choix" -eq 3 ];then 
+	$commande = $(echo "ls -l /boot | head -3 | tail -1")
+	echo "exemple de la commande ls -l /boot | head -3 | tail -1"
+	ligne1 | echo -e | echo resultat
+	ligne2 | echo -e | commande
+else
+	$commande = $(echo "ls -l /boot | head -2 | tail -2")
+	echo "exemple de la commande ls -l /boot | head -2 | tail -2"
+fi
+
+#clear
+#ligne1
+#if [$exemple = 1 ] then
+#	echo "exemple de la commande ls -l /boot | head -4"
+#	ligne1 | echo -e | echo resultat
+#	ligne2 | echo -e | commande
+#elif [$exemple = 2 ] 
+#	then echo "exemple de la commande ls -l /boot | tail -1"
+#	ligne1 | echo -e | echo resultat
+#	ligne2 | echo -e | commande
+#elif [$exemple =3 ]
+#	then echo "exemple de la commande ls -l /boot | head -3 | tail -1"
+#	ligne1 | echo -e | echo resultat
+#	ligne2 | echo -e | commande
+#else 	echo "exemple de la commande ls -l /boot | head -2 | tail -2"
+#	ligne1 | echo -e | echo resultat
+#	ligne2 | echo -e | commande
+#fi
+#echo "			Commande head			"
+#ligne1
+
+#echo -e
+#echo "commande ls -l /boot | head -4 : 4 premieres lignes"
+#echo "ls -l /boot | head -4" | ligne2
+#echo -e
+#ls -l /boot | head -4
+#echo -e
+
+# echo -e | ligne2 | echo -e
+#echo "commande ls -l /boot | tail -1 : La derniere ligne afficher"
+#echo "affiche la dernier ligne d'un resultat"
+#ligne2
+#echo -e
+#echo "ls -l /boot | tail -1"
+#ls -l /boot | tail -1
+#ligne2
+
+#echo -e "-==== filtrer le resultat ====-"
+#echo -e "commande ls -l /boot | head -3 | tail -1"
+#echo -e "affiche la premiere ligne d'un resultat"
+#ls -l /boot | head -3 | tail -1
+
+#echo -e
+#echo -e "commande ls -l /boot | head -1 | tail -3"
+#echo -e "affiche la derniere ligne d un resultat"
+#ls -l /boot | head -1 | tail -3
+
+#echo -e
+#echo -e "commande ls -l /boot | head -2 | tail -2"
+#echo -e "affiche "
+#ls -l /boot | head -2 | tail -2"
+#echo -e
+#

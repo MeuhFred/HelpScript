@@ -1,0 +1,12 @@
+#! /bin/bash
+
+##############################
+# Auteur : Frederic Charest  #
+# Date : 15 Decembre 2023    #
+# Objet : lecture au clavier #
+# Utilisation : ./script1    #
+##############################
+
+echo -n "Entrez votre prnom: "
+read name
+echo "Bonjour $name"

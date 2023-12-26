@@ -1,0 +1,6 @@
+#! /bin/bash
+# le parametre -s : n'affiche pas le caractere que l'usager est en train d'ecrire
+# le parametre -p : permet d'attendre une reponse de l'usager
+read -sp "Entrer votre password: " password
+echo "Votre password est $password"
+
