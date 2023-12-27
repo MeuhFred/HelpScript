@@ -38,14 +38,14 @@ function div() {
 
 echo "quel operation voulez-vous faire:  (1234 < + - * / > 1234)"
 read nbr
-if [ $nbr | cut -d '+' ]; then
+if [[ ""$nbr"" | cut -d '+' ]]; then
 	echo "Addition"
-else if  [ $nbr | cut -d '-' ]; then
+else if  [[ ""$nbr"" | cut -d '-' ]]; then
 	echo "Soustraction"
-else if  [ $nbr | cut -d '*' ]; then
+else if  [[ ""$nbr"" | cut -d '*' ]]; then
 	echo "Multiplication"
 else 
-	[ $nbr | cut -d '/' ]
+	[[ ""$nbr"" | cut -d '/' ]]
 	echo "Division"
 fi
 
@@ -54,7 +54,7 @@ result2=$(add 5 10)
 resultmoins=$(subs 10 5)
 resultmulti=$(multiple 12 12)
 resultdiv=$(div 144 12)
-echo "le resultat est : $resultadd
+echo "le resultat est : $resultadd"
 echo "le deuxieme resultat est : $result2"
 echo "le resultat de la soustraction est : $resultmoins"
 echo "le resultat de la multiplication est: $resultmulti"
