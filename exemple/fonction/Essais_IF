@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# =======================
+# ====== Fonction =======
+# =======================
+
+function add(){
+	local num1=$1
+	local num2=$2
+	local sum=$(($num1 + $num2))
+	echo "$sum"
+}
+
+function subs() {
+	local num1=$1
+	local num2=$2
+	local moins=$(($num1 - $num2))
+	echo "$moins"
+}
+
+function multiple() {
+	local num1=$1
+	local num2=$2
+	local multiple=$(($num1 * $num2))
+	echo "$multiple"
+}
+
+function div() {
+	local num1=$1
+	local num2=$2
+	local div=$(($num1 / $num2))
+	echo "$div"
+}
+
+# ================================
+# ===== Programme principale =====
+# ================================
+echo "Quel opération voulez-vous effectuer? (Numero1 1234 < + - * / > 1234)"
+read reponse
+if [ $reponse -eq + ] ; then
+    echo "Addition"
+elif [ $reponse -eq - ] ; then
+    echo "Soustraction"
+elif [ $reponse -eq * ] ; then
+    echo "Multiplication"
+else
+    echo "Division"
+fi
