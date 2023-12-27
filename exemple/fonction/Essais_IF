@@ -53,7 +53,7 @@ numero2=$(echo $reponse | cut -d '$operation' -f2)
 if [$reponse -eq + ] ; then
 	echo "Addition"
 	operation=$(echo "+")
-	add(echo "add($numero1 $numero2"))
+	add(echo "add($numero1 $numero2)")
 elif [$reponse -eq - ] ; then
     echo "Soustraction"
 	operation=$(echo "-")
@@ -61,7 +61,7 @@ elif [$reponse -eq - ] ; then
 elif [$reponse -eq * ] ; then
     echo "Multiplication"
 	operation=$(echo "*")
-#	multiple($reponse)c
+#	multiple($reponse)
 else
     echo "Divi"
 	operation=$(echo "/")
