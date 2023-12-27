@@ -44,5 +44,5 @@ elif [$reponse -eq - ] ; then
 elif [$reponse -eq * ] ; then
     echo "Multiplication"
 else
-    echo "Division"
+    echo "Divisiond"
 fi
