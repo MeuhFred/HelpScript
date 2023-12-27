@@ -66,6 +66,7 @@ read reponse
 # Bloc qui sort les numéros a calculé
 numero1=$(echo $reponse | cut -d 'Operateur($reponse)' -f 1)
 numero2=$(echo $reponse | cut -d 'Operateur($reponse)' -f 2)
+operateurchoisis=$(operateur $reponse )
 echo $numero1
 echo $numero2
 
@@ -73,15 +74,15 @@ echo $numero2
 
 # Bloc qui sers a sortir l operation que le script va faire
 
-if [$reponse -eq + ] ; then
+if [$operateurchoisis -eq + ] ; then
 	echo "Addition"
 	operation=$(echo "+")
 	add($reponse)
-elif [$reponse -eq - ] ; then
+elif [$operateurchoisis -eq - ] ; then
     echo "Soustraction"
 	operation=$(echo "-")
 	subs($reponse)
-elif [$reponse -eq * ] ; then
+elif [$operateurchoisis -eq * ] ; then
     echo "Multiplic1ation"
 	operation=$(echo "*")
 	multiple($reponse)
