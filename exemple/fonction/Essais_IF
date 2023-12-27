@@ -105,5 +105,3 @@ elif [operation -eq * ]; then
 else 
 	resultat=$(Div(numero1 numero2))
 fi
-
-echo "le resultat de l` operation demandé est $resultat"
