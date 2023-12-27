@@ -43,6 +43,9 @@ function num1(){
 # ================================
 echo "Quel opération voulez-vous effectuer? (1234 < + - * / > 1234)"
 read reponse
+
+# Bloc qui sers a sortir l operation que le script va faire
+
 if [$reponse -eq + ] ; then
 	echo "Addition"
 	operation=$(echo "+")
@@ -61,8 +64,11 @@ else
 	div($reponse)
 fi
 
+# Bloc qui sort les numéros a calculé
 numero1$(echo $reponse | cut -d '$operation' -f1)
 numero2$(echo $reponse | cut -d '$operation' -f2)
+
+
 if [$operation -eq + ]; then
 	echo "add(numero1 numero2)"
 elif [$opera0tion -eq - ]; then
