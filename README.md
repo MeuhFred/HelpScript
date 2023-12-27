@@ -35,4 +35,3 @@ git push -u origin main
 ```bash 
 git remote set-url origin https://MeuhFred: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@github.com/MeuhFred/HelpScript.git
 ```
-
