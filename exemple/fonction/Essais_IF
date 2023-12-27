@@ -37,11 +37,11 @@ function div() {
 # ================================
 echo "Quel opération voulez-vous effectuer? (Numero1 1234 < + - * / > 1234)"
 read reponse
-if [ $reponse -eq + ] ; then
+if [$reponse -eq + ] ; then
     echo "Addition"
-elif [ $reponse -eq - ] ; then
+elif [$reponse -eq - ] ; then
     echo "Soustraction"
-elif [ $reponse -eq * ] ; then
+elif [$reponse -eq * ] ; then
     echo "Multiplication"
 else
     echo "Division"
