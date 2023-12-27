@@ -65,7 +65,6 @@ numero1$(echo $reponse | cut -d '$operation' -f1)
 numero2$(echo $reponse | cut -d '$operation' -f2)
 if [$operation -eq + ]; then
 	echo "add(numero1 numero2)"
-	
 elif [$opera0tion -eq - ]; then
 	subs()
 elif [operation -eq * ]; then
