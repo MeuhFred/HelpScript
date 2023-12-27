@@ -50,7 +50,7 @@ elif [$operation -eq * ] ; then
 elif [$operation -eq "/"] ; then
 	resultat=$(echo "/")]
 else
-	echo `"Vous n'avez pas entré d' operation a effectuer"
+	echo "Vous n'avez pas entré d' operation a effectuer"
 fi
 	echo "$operation"
 }
