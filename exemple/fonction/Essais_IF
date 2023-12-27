@@ -47,6 +47,8 @@ read reponse
 # Bloc qui sort les numéros a calculé
 numero1=$(echo $reponse | cut -d '$operation' -f1)
 numero2=$(echo $reponse | cut -d '$operation' -f2)
+echo $numero1
+echo $numero2
 
 # Bloc qui sers a sortir l operation que le script va faire
 
