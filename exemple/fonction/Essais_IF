@@ -38,18 +38,43 @@ function num1(){
 	local div=$(($num1 / $num2))
 	echo "$div"
 }
+
+function Operateur(){
+	local operation=$1
+if [$operation -eq + ] ; then
+	resultat=$(echo "+")
+elif [$operation -eq - ] ; then
+	resultat=$(echo "-")
+elif [$operation -eq * ] ; then
+	resultat=$(echo "*")
+elif [$operation -eq "/"] 
+	resultat=$(echo "/")]
+fi
+	
+}
+
+
 # ================================
 # ===== Programme principale =====
 # ================================
 echo "Quel opération voulez-vous effectuer? (1234 < + - * / > 1234)"
 read reponse
 
+
+# Bloc qui sort les numéros a calculé
+numero1=$(echo $reponse | cut -d '$operation' -f 1)
+numero2=$(echo $reponse | cut -d '$operation' -f 2)
+echo $numero1
+echo $numero2
+
+
+
 # Bloc qui sers a sortir l operation que le script va faire
 
 if [$reponse -eq + ] ; then
 	echo "Addition"
 	operation=$(echo "+")
-	add($reponsec)
+	add($reponse)
 elif [$reponse -eq - ] ; then
     echo "Soustraction"
 	operation=$(echo "-")
@@ -64,11 +89,6 @@ else
 	div($reponse)
 fi
 
-# Bloc qui sort les numéros a calculé
-numero1=$(echo $reponse | cut -d '$operation' -f 1)
-numero2=$(echo $reponse | cut -d '$operation' -f 2)
-echo $numero1
-echo $numero2
 
 
 echo "$resultat"
