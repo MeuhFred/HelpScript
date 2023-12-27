@@ -47,8 +47,10 @@ elif [$operation -eq - ] ; then
 	resultat=$(echo "-")
 elif [$operation -eq * ] ; then
 	resultat=$(echo "*")
-elif [$operation -eq "/"] 
+elif [$operation -eq "/"] ; then
 	resultat=$(echo "/")]
+else
+	echo"Vous n'avez pas entré d' operation a effectuer"
 fi
 	
 }
