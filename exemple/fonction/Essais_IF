@@ -39,10 +39,14 @@ echo "Quel opération voulez-vous effectuer? (Numero1 1234 < + - * / > 1234)"
 read reponse
 if [$reponse -eq + ] ; then
     echo "Addition"
+	add($reponse)
 elif [$reponse -eq - ] ; then
     echo "Soustraction"
+	subs($reponse)
 elif [$reponse -eq * ] ; then
     echo "Multiplication"
+	multiple($reponse)
 else
     echo "Divi"c
+	div($reponse)
 fi
