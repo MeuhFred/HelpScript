@@ -59,15 +59,15 @@ if [$reponse -eq + ] ; then
 elif [$reponse -eq - ] ; then
     echo "Soustraction"
 	operation=$(echo "-")
-#	subs($reponse)
+	subs($reponse)
 elif [$reponse -eq * ] ; then
     echo "Multiplic1ation"
 	operation=$(echo "*")
-#	multiple($reponse)
+	multiple($reponse)
 else
     echo "Divi"
 	operation=$(echo "/")
-#	div($reponse)
+	div($reponse)
 fi
 echo "$resultat"
 
