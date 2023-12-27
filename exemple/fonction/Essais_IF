@@ -54,7 +54,6 @@ if [$reponse -eq + ] ; then
 	echo "Addition"
 	operation=$(echo "+")
 	resultat=$(add $numero1 $numero2)
-	echo "$resultatf"
 elif [$reponse -eq - ] ; then
     echo "Soustraction"
 	operation=$(echo "-")
@@ -68,7 +67,7 @@ else
 	operation=$(echo "/")
 #	div($reponse)
 fi
-
+echo "$resultat"
 
 if [$operation -eq + ]; then
 	resultat=$(add(numero1 numero2))
