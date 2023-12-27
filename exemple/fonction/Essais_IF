@@ -53,13 +53,14 @@ numero2=$(echo $reponse | cut -d '$operation' -f2)
 if [$reponse -eq + ] ; then
 	echo "Addition"
 	operation=$(echo "+")
-	add(echo "add($numero1 $numero2)")
+	resultat=$(add $numero1 $numero2)
+	echo "$resultatf"
 elif [$reponse -eq - ] ; then
     echo "Soustraction"
 	operation=$(echo "-")
 #	subs($reponse)
 elif [$reponse -eq * ] ; then
-    echo "Multiplication"
+    echo "Multiplic1ation"
 	operation=$(echo "*")
 #	multiple($reponse)
 else
