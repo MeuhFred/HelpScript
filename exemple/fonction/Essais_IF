@@ -93,8 +93,6 @@ else
 	div($reponse)
 fi
 
-
-
 echo "$resultat"
 
 if [$operation -eq + ]; then
