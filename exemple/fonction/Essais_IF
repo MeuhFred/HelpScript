@@ -64,8 +64,8 @@ read reponse
 
 
 # Bloc qui sort les numéros a calculé
-numero1=$(echo $reponse | cut -d 'Operateur()' -f 1)
-numero2=$(echo $reponse | cut -d 'Operateur()' -f 2)
+numero1=$(echo $reponse | cut -d 'Operateur($reponse)' -f 1)
+numero2=$(echo $reponse | cut -d 'Operateur($reponse)' -f 2)
 echo $numero1
 echo $numero2
 
