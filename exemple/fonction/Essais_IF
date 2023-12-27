@@ -44,7 +44,7 @@ function Operateur(){
 	local operation=$1
 if [$operation -eq + ] ; then
 	resultat=$(echo "+")
-	echo "$resultat"
+#	echo "$resultat"
 elif [$operation -eq - ] ; then
 	resultat=$(echo "-")
 elif [$operation -eq * ] ; then
