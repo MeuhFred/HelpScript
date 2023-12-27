@@ -4,27 +4,28 @@
 # ====== Fonction =======
 # =======================
 
+# fonction addition
 function add(){
 	local num1=$1
 	local num2=$2
 	local sum=$(($num1 + $num2))
 	echo "$sum"
 }
-
+# fonction soustraction
 function subs() {
 	local num1=$1
 	local num2=$2
 	local moins=$(($num1 - $num2))
 	echo "$moins"
 }
-
+# fonction multiplication
 function multiple() {
 	local num1=$1
 	local num2=$2
 	local multiple=$(($num1 * $num2))
 	echo "$multiple"
 }
-
+# fonction division
 function div() {
 	local num1=$1
 	local num2=$2
@@ -35,10 +36,10 @@ function div() {
 function num1(){
 	local num1=$1
 	local num2=$2
-	local div=$(($num1 / $num2))
 	echo "$div"
 }
 
+# fonction pour sortir l' operateur a effectuer
 function Operateur(){
 	local operation=$1
 if [$operation -eq + ] ; then
@@ -51,11 +52,9 @@ elif [$operation -eq * ] ; then
 elif [$operation -eq "/"] ; then
 	resultat=$(echo "/")]
 else
-	echo "Vous n'avez pas entré d' operation a effectuer"
-fi
-	echo "$operation"
+#	echo "Vous n'avez pas entré d' operation à effectuer"
+	echo "$resultat"
 }
-
 
 # ================================
 # ===== Programme principale =====
