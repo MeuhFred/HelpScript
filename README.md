@@ -8,8 +8,8 @@ git --version
 
 ## Commandes de configuration
 ```bash
-git config --global user.email "bruno.charest@gmail.com"
-git config --global user.name "bcharest"
+git config --global user.email "frederic-charest@hotail.com"
+git config --global user.name "MeuhFred"
 git config --global credential.helper store
 git config --global http.postBuffer 524288000
 git config --global --list
@@ -20,8 +20,7 @@ git config --global --list
 git init
 git add -A
 git commit -m "first commit everythings !"
-git remote add origin https://git.bcmaison.cf/bruno/My-First-Project.git
-git remote set-url origin https://bcharest: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@github.com/bcharest/project1.git
+git remote add origin https://github.com/MeuhFred/HelpScript.git
 git push -u origin master
 ```
 
@@ -31,3 +30,9 @@ git add -A
 git commit -m "Commit everything !"
 git push -u origin main
 ```
+
+## Commande pour connection coter client
+```bash 
+git remote set-url origin https://MeuhFred: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@github.com/MeuhFred/HelpScript.git
+```
+
