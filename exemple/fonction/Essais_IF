@@ -93,8 +93,10 @@ else if [$operation = *]
 then
 	resultat=$(multiple(num1 num2))
 else 
-	r
+	resultat=$(div(num1 num2))
 fi
+
+echo le resultat est $resultat
 # Bloc qui sort les numéros a calculé
 # numero1=$(echo $reponse | cut -d 'Operateur($reponse)' -f 1)
 #numero2=$(echo $reponse | cut -d 'Operateur($reponse)' -f 2)
