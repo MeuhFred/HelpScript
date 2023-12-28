@@ -51,7 +51,7 @@ echo "$oper"
 # ================================
 echo "Quel opération voulez-vous effectuer? (1234 < + - * / > 1234)"
 read reponse
-Operation=$(OPP reponse )
+Operation=$(OPP reponse)
 echo $Operation
 
 #function num1(){
