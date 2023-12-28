@@ -82,7 +82,7 @@ read reponse
 #numero1=$(num1 $reponse)
 #numero2=$(num2 $reponse)
 Operation=$(OPP($reponse))
-
+echo $Operation
 #if [$Operation = +]
 #then 
 #	resultat=$(add(num1 num2))
@@ -96,7 +96,7 @@ Operation=$(OPP($reponse))
 #	resultat=$(div(num1 num2))
 #fi
 
-echo le resultat est $resultat
+#echo le resultat est $resultat
 # Bloc qui sort les numéros a calculé
 # numero1=$(echo $reponse | cut -d 'Operateur($reponse)' -f 1)
 #numero2=$(echo $reponse | cut -d 'Operateur($reponse)' -f 2)
