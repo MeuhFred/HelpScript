@@ -79,8 +79,8 @@ echo $oper
 echo "Quel opération voulez-vous effectuer? (1234 < + - * / > 1234)"
 read reponse
 
-numero1=$(num1 $reponse)
-numero2=$(num2 $reponse)
+#numero1=$(num1 $reponse)
+#numero2=$(num2 $reponse)
 Operation=$(Opp $reponse)
 
 if [$operation = +] 
