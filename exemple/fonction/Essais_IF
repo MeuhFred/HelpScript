@@ -83,18 +83,18 @@ read reponse
 #numero2=$(num2 $reponse)
 Operation=$(OPP($reponse))
 
-if [$Operation = +]
-then 
-	resultat=$(add(num1 num2))
-else if [$operation = -]
-then 
-	resultat=$(subs(num1 num2))
-else if [$operation = *]
-then
-	resultat=$(multiple(num1 num2))
-else 
-	resultat=$(div(num1 num2))
-fi
+#if [$Operation = +]
+#then 
+#	resultat=$(add(num1 num2))
+#else if [$operation = -]
+##then
+#	resultat=$(subs(num1 num2))
+#else if [$operation = *]
+#then
+#	resultat=$(multiple(num1 num2))
+#else 
+#	resultat=$(div(num1 num2))
+#fi
 
 echo le resultat est $resultat
 # Bloc qui sort les numéros a calculé
