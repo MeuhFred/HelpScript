@@ -52,6 +52,7 @@ elif [$operation -eq "/"] ; then
 	resultat=$(echo "/")
 else
 	echo "Vous n'avez pas entré d' operation à effectuer"
+	resultat=$(echo " ")
 fi
 	echo "$resultat"
 }
