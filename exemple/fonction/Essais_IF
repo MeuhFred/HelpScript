@@ -79,11 +79,11 @@ echo "$oper"
 # ================================
 echo "Quel opération voulez-vous effectuer? (1234 < + - * / > 1234)"
 read reponse
+Operation=$(OPP reponse )
+echo $Operation
 
 #numero1=$(num1 $reponse)
 #numero2=$(num2 $reponse)
-Operation=$(OPP reponse )
-echo $Operation
 #if [$Operation = +]
 #then 
 #	resultat=$(add(num1 num2))
