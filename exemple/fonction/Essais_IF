@@ -86,10 +86,14 @@ Operation=$(Opp($reponse))
 if [$operation = +]
 then 
 	resultat=$(add(num1 num2))
-	echo $resultat
-else
-	echo fin
-
+elfi [$operation = -]
+then 
+	resultat=$(subs(num1 num2))
+elfi [$operation = *]
+then
+	resultat=$(multiple(num1 num2))
+else 
+	r
 fi
 # Bloc qui sort les numéros a calculé
 # numero1=$(echo $reponse | cut -d 'Operateur($reponse)' -f 1)
