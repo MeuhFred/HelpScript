@@ -33,38 +33,63 @@ function div() {
 	echo "$div"
 }
 
-function num1(){
-	local num1=$1
-	local num2=$2
-	echo "$div"
+#function num1(){
+#	local num1=$1
+#	local num2=$2
+#	echo "$div"
+#}
+
+function OPP(){
+oper=$(echo "$expression" | sed 's/[0-9]*//g')
+echo $oper
 }
 
+function num1(){
+num1=$(echo "$expression" | cut -d "$oper" -f 1)
+echo $num1
+}
+
+function num2(){
+num2=$(echo "$expression" | cut -d "$oper" -f 2)
+}
+
+
 # fonction pour sortir l' operateur a effectuer
-function Operateur(){
+#function Operateur(){
 	local operation=$1
-if [$operation -eq + ] ; then
+#if [$operation -eq + ] ; then
 	resultat=$(echo "+")
-elif [$operation -eq - ] ; then
+#elif [$operation -eq - ] ; then
 	resultat=$(echo "-")
-elif [$operation -eq * ] ; then
+#elif [$operation -eq * ] ; then
 	resultat=$(echo "*")
-elif [$operation -eq / ] ; then
+#elif [$operation -eq / ] ; then
 	resultat=$(echo "/")
-else
+#else
 	echo "Vous n'avez pas entré d' operation à effectuer"
 	resultat=$(echo "")
-fi
-	echo "$resultat"
-}
+#fi
+#	echo "$resultat"
+#}
 
 # ================================
 # ===== Programme principale =====
 # ================================
 echo "Quel opération voulez-vous effectuer? (1234 < + - * / > 1234)"
 read reponse
-Oper=$(Operateur $reponse)
-echo $Oper
 
+numero1=$(num1 $reponse)
+numero2=$(num2 $reponse)
+Operation=$(Opp $reponse)
+
+if [$operation = +] 
+then
+	resultat=$(add(num1 num2))
+	echo $resultat
+else
+	echo fin
+
+fi
 # Bloc qui sort les numéros a calculé
 # numero1=$(echo $reponse | cut -d 'Operateur($reponse)' -f 1)
 #numero2=$(echo $reponse | cut -d 'Operateur($reponse)' -f 2)
