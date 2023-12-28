@@ -44,14 +44,14 @@ oper=$(echo "$1" | sed 's/[0-9]*//g')
 echo $oper
 }
 
-function num1(){
-num1=$(echo "$expression" | cut -d "$oper" -f 1)
-echo $num1
-}
+#function num1(){
+#num1=$(echo "$expression" | cut -d "$oper" -f 1)
+#echo $num1
+#}
 
-function num2(){
-num2=$(echo "$expression" | cut -d "$oper" -f 2)
-}
+#function num2(){
+#num2=$(echo "$expression" | cut -d "$oper" -f 2)
+#}
 
 
 # fonction pour sortir l' operateur a effectuer
