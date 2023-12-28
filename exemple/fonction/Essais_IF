@@ -83,7 +83,8 @@ read reponse
 #numero2=$(num2 $reponse)
 Operation=$(Opp($reponse))
 
-if [$operation = +] 
+if [$operation = +]
+then 
 	resultat=$(add(num1 num2))
 	echo $resultat
 else
