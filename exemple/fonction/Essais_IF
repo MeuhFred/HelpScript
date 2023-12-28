@@ -63,44 +63,46 @@ fi
 echo "Quel opération voulez-vous effectuer? (1234 < + - * / > 1234)"
 read reponse
 
+Oper= operateur($reponse)
+echo $Oper
 
 # Bloc qui sort les numéros a calculé
-numero1=$(echo $reponse | cut -d 'Operateur($reponse)' -f 1)
-numero2=$(echo $reponse | cut -d 'Operateur($reponse)' -f 2)
-operateurchoisis=$(operateur $reponse )
-echo $numero1
-echo $numero2
+# numero1=$(echo $reponse | cut -d 'Operateur($reponse)' -f 1)
+#numero2=$(echo $reponse | cut -d 'Operateur($reponse)' -f 2)
+#operateurchoisis=$(operateur $reponse )
+#echo $numero1
+#echo $numero2
 
 
 
 # Bloc qui sers a sortir l operation que le script va faire
 
-if [$operateurchoisis -eq + ] ; then
-	echo "Addition"
-	operation=$(echo "+")
-	add($reponse)
-elif [$operateurchoisis -eq - ] ; then
-    echo "Soustraction"
-	operation=$(echo "-")
-	subs($reponse)
-elif [$operateurchoisis -eq * ] ; then
-    echo "Multiplic1ation"
-	operation=$(echo "*")
-	multiple($reponse)
-else
-    echo "Divi"
-	operation=$(echo "/")
-	div($reponse)
-fi
+#if [$operateurchoisis -eq + ] ; then
+#	echo "Addition"
+#	operation=$(echo "+")
+#	add($reponse)
+#elif [$operateurchoisis -eq - ] ; then
+#    echo "Soustraction"
+#	operation=$(echo "-")
+#	subs($reponse)
+#elif [$operateurchoisis -eq * ] ; then
+#    echo "Multiplic1ation"
+#	operation=$(echo "*")
+#	multiple($reponse)
+#else
+#    echo "Div"
+#	operation=$(echo "/")
+#	div($reponse)
+#fi
 
-echo "$resultat"
+#echo "$resultat"
 
-if [$operation -eq + ]; then
-	resultat=$(add(numero1 numero2))
-elif [$opera0tion -eq - ]; then
-	resultat=$(subs(numero1 numero2))
-elif [operation -eq * ]; then
-	resultat=$(multiple(numero1 numero2))
-else 
-	resultat=$(Div(numero1 numero2))
-fi
+#if [$operation -eq + ]; then
+#	resultat=$(add(numero1 numero2))
+#elif [$opera0tion -eq - ]; then
+#	resultat=$(subs(numero1 numero2))
+#elif [operation -eq * ]; then
+#	resultat=$(multiple(numero1 numero2))
+#else 
+#	resultat=$(Div(numero1 numero2))
+#fi
