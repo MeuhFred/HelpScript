@@ -81,7 +81,7 @@ read reponse
 
 #numero1=$(num1 $reponse)
 #numero2=$(num2 $reponse)
-Operation=$(OPPdd($reponse))
+Operation=$(OPP($reponse))
 
 if [$operation = +]
 then 
