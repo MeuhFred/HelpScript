@@ -86,10 +86,10 @@ Operation=$(Opp($reponse))
 if [$operation = +]
 then 
 	resultat=$(add(num1 num2))
-elfi [$operation = -]
+else if [$operation = -]
 then 
 	resultat=$(subs(num1 num2))
-elfi [$operation = *]
+else if [$operation = *]
 then
 	resultat=$(multiple(num1 num2))
 else 
