@@ -62,8 +62,7 @@ fi
 # ================================
 echo "Quel opération voulez-vous effectuer? (1234 < + - * / > 1234)"
 read reponse
-
-Oper=Operateur($reponse)
+Oper=$(Operateur $reponse)
 echo $Oper
 
 # Bloc qui sort les numéros a calculé
