@@ -40,7 +40,8 @@ function div() {
 #}
 
 function OPP(){
-oper=$(echo "$1" | sed 's/[0-9]*//g')
+	local num1=$1
+oper=$(echo "num1" | sed 's/[0-9]*//g')
 echo $oper
 }
 
