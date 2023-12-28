@@ -57,18 +57,18 @@ echo $oper
 
 # fonction pour sortir l' operateur a effectuer
 #function Operateur(){
-	local operation=$1
+#	local operation=$1
 #if [$operation -eq + ] ; then
-	resultat=$(echo "+")
+#	resultat=$(echo "+")
 #elif [$operation -eq - ] ; then
-	resultat=$(echo "-")
+#	resultat=$(echo "-")
 #elif [$operation -eq * ] ; then
-	resultat=$(echo "*")
+#	resultat=$(echo "*")
 #elif [$operation -eq / ] ; then
-	resultat=$(echo "/")
+#	resultat=$(echo "/")
 #else
-	echo "Vous n'avez pas entré d' operation à effectuer"
-	resultat=$(echo "")
+#	echo "Vous n'avez pas entré d' operation à effectuer"
+#	resultat=$(echo "")
 #fi
 #	echo "$resultat"
 #}
